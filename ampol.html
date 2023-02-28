@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon Paul's Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h3>Jhon Paul's Playlist</h3>
+    <p> 1 : Stars </p> 
+    <p> 2 : 214 </p> 
+    <p> 3 : 13 </p> 
+    <p> 4 : Rather Be </p> 
+   <div class="player">
+       <div class="wrapper">
+           <div class="details">
+               <div class="now-playing">PLAYING x OF y</div>
+               <div class="track-art"></div>
+               <div class="track-name">Track Name</div>
+               <div class="track-artist">Track Artist</div>
+           </div>
+
+           <div class="slider_container">
+               <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+           </div>
+
+           <div class="slider_container">
+               <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+           </div>
+
+           <div class="buttons">
+               <div class="random-track" onclick="randomTrack()">
+                   <i class="fas fa-random fa-2x" title="random"></i>
+               </div>
+               <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+                <div class="repeat-track" onclick="repeatTrack()">
+                    <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                </div>
+           </div>
+
+            <div id="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>  
+       </div>
+   </div> 
+   
+   <center><p><br><br><br><br><br><br><br><br><br>
+    A picture of you reminds me<br>
+   How the years have gone so lonely<br>
+   And why do you have to leave me<br>
+   Without saying that you love me?<br>
+   I'm saying "I love you" again<br>
+   Are you listening?<br>
+   Open your eyes once again<br>
+   Look at me crying<br><br>
+
+   If only you could hear me shout your name<br>
+   If only you could feel my love again<br>
+   The stars in the sky will never be the same<br>
+   If only you were here<br><br>
+
+   A picture of you reminds me<br>
+   How the days have gone so empty<br>
+   And why do you have to leave me<br>
+   Without saying that you love me?<br>
+   I'm saying "I love you" again<br>
+   Are you listening?<br>
+   Open your eyes once again<br>
+   Look at me crying<br><br>
+
+   If only you could hear me shout your name<br>
+   If only you could feel my love again<br>
+   The stars in the sky will never be the same<br>
+   If only you were here<br><br>
+
+   I'm saying "I love you" again<br>
+   Are you listening?<br>
+   Open your eyes once again<br>
+   Look at me crying<br>
+   If only you could hear me shout your name<br>
+   If only you could feel my love again<br>
+   The stars in the sky will never be the same<br><br>
+
+   If only I had wings, so I can fly<br>
+   I wanna be with you for all of time<br>
+   My love for you will never die<br>
+   If only you could hear me shout your name<br>
+   If only you could feel my love again<br>
+   The stars in the sky will never be the same<br>
+   If only you were here<br>
+   If only you were here<br></center>
+  
+</body>
+</html>
